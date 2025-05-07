@@ -1,0 +1,59 @@
+/* Vous pouvez placer ce code dans votre fichier CSS principal ou en CSS-in-JS */
+nav {
+    background-color: palevioletred;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  
+  a:hover {
+    background-color: rgb(242, 162, 189);
+    color: rgb(255, 63, 127);
+  }
+  
+  /* Style actif personnalisé (si vous utilisez NavLink) */
+  .active {
+    color: rgb(255, 63, 127);
+    font-weight: bold;
+  }
+  
+  /* Ligne d'animation sous les liens */
+  li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+  }
+  
+  li:hover::after {
+    width: 100%;
+  }
