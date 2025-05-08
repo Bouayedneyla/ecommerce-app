@@ -1,4 +1,3 @@
-// src/data.js
 export const products = [
     {
       id: 1,
@@ -20,7 +19,7 @@ export const products = [
       price: 50.99,
       image: "https://via.placeholder.com/150",
       description: "Une bague en or magnifique."
-    }
-    // Ajoute autant de produits que tu veux
+    },
+    // Ajoutez autant de produits que vous le souhaitez
   ];
   
